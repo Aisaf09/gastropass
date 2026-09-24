@@ -7,7 +7,7 @@ import { generateApplePass } from "@/lib/wallet/apple";
 import { generateGoogleWalletSaveUrl } from "@/lib/wallet/google";
 import { WalletNotConfiguredError } from "@/lib/wallet/errors";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://gastropass.app";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://gastropass.app";
 
 type Platform = "apple" | "google";
 

@@ -87,7 +87,7 @@ export async function generateApplePass(input: AppleWalletInput): Promise<Buffer
       backgroundColor: input.brandColor,
       logoText: input.restaurantName,
       authenticationToken: input.authenticationToken,
-      webServiceURL: `${process.env.NEXT_PUBLIC_SITE_URL ?? "https://gastropass.app"}/api/v1`,
+      webServiceURL: `${process.env.NEXT_PUBLIC_SITE_URL || "https://gastropass.app"}/api/v1`,
     },
   );
 

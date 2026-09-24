@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { createServiceRoleClient } from "@/lib/supabase/service-role";
 import { qrCodeDataUrl } from "@/lib/qrcode";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://gastropass.app";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://gastropass.app";
 
 // Personal, unauthenticated customer page (name + points balance) — must
 // never be indexed even though it isn't covered by robots.txt's /dashboard/

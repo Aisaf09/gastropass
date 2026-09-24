@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://gastropass.app";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://gastropass.app";
 const SITE_NAME = "GastroPass";
 const SITE_DESCRIPTION =
   "GastroPass turns restaurant loyalty into a native Apple Wallet or Google Wallet pass. Issue digital loyalty cards, update points in real time, and send lock-screen push notifications without an app.";

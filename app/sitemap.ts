@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { createServiceRoleClient } from "@/lib/supabase/service-role";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://gastropass.app";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://gastropass.app";
 
 export const revalidate = 3600;
 
