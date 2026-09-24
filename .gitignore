@@ -1,0 +1,19 @@
+node_modules/
+.next/
+out/
+build/
+.env
+.env.local
+.env.*.local
+*.pem
+*.p12
+*.pkpass
+.DS_Store
+npm-debug.log*
+.vercel
+next-env.d.ts
+tsconfig.tsbuildinfo
+
+# Unrelated tooling that ended up nested in this folder — not part of this project.
+/GAME-MASTER/
+.claude/settings.local.json

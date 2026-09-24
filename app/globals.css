@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 20 9% 5%;
+  --foreground: 20 6% 97%;
+  --card: 20 9% 9%;
+  --card-foreground: 20 6% 97%;
+  --popover: 20 9% 9%;
+  --popover-foreground: 20 6% 97%;
+  --border: 20 7% 20%;
+  --input: 20 7% 24%;
+  --ring: 16 88% 55%;
+  --muted: 20 7% 13%;
+  --muted-foreground: 20 5% 65%;
+  --accent: 20 7% 15%;
+  --accent-foreground: 20 6% 97%;
+  --primary: 16 88% 55%;
+  --primary-foreground: 20 15% 7%;
+  --secondary: 168 70% 42%;
+  --secondary-foreground: 20 15% 7%;
+  --destructive: 355 75% 55%;
+  --destructive-foreground: 20 6% 97%;
+  --radius: 1rem;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  background-image:
+    radial-gradient(ellipse 80% 50% at 20% -10%, hsl(16 88% 50% / 0.13), transparent),
+    radial-gradient(ellipse 60% 40% at 100% 0%, hsl(262 70% 60% / 0.09), transparent);
+  background-attachment: fixed;
+}
+
+@layer utilities {
+  .glass {
+    background-color: hsl(var(--card) / 0.6);
+    backdrop-filter: blur(20px) saturate(150%);
+    -webkit-backdrop-filter: blur(20px) saturate(150%);
+    border: 1px solid hsl(0 0% 100% / 0.08);
+  }
+
+  .glass-strong {
+    background-color: hsl(var(--card) / 0.8);
+    backdrop-filter: blur(24px) saturate(180%);
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
+    border: 1px solid hsl(0 0% 100% / 0.1);
+  }
+}
